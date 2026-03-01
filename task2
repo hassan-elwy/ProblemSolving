@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+
+void Rec(int s)
+{
+    if(s==0)
+    {
+        return;
+    }
+    Rec(s-1);
+    cout<<s<<endl;
+}
+
+int main()
+{
+    int s;
+    cin>>s;
+    
+    Rec(s);
+    return 0;
+
+}
